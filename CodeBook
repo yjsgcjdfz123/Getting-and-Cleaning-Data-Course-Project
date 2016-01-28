@@ -1,0 +1,12 @@
+This assignment uses data from the UC Irvine Machine Learning Repository, we use the "Human Activity Recognition Using Smartphones Data Set" as our data source.
+
+The data taken from the website includes lots of measurements, what we use in this project is only part of it, including "subject_train/test", "X_train/test", "y_train/test" and description files in the "UCI HAR Dataset" main folder.
+
+Subject_train/test: identify the subject who perform those measurement, each row identifies a certain subject, between 1-30
+X_train/test: measurement data, each row is performed by a certain subject, has 561 column in total, indicating 561 measurements
+y_train/test: identify what the activity is when the measurement is performed, each row indicates a certain activity.
+              1 means WALKING, 2 means WALKING_UPSTAIRS, 3 means WALKING_DOWNSTAIRS, 4 means SITTING, 5 means STANDING, 6 means LAYING
+              
+In this work, I merge the test and train data from the original file and create a new file with descriptive labels of the rows, columns and variables.
+The mean and standard deviation measurement data from all the measurements are then taken out and form a new dataset and exported as a new file.
+Finally average of the measurements in the new dataset is calculated and exported as a new file as well.
