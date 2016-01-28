@@ -44,6 +44,9 @@ for (i in 1:6){
 # Name ros of the data set as "activity" + "_" + "subject#"
 rownames(Average) = paste(rep(activity_labels[,2], each = 30), 1:30, sep = "_")
 
+# Write data into .txt file
+write.table(Average, file = "./Average.txt", row.names = FALSE)
+
 # Write data into .csv file
 write.csv(Xys, file = "./measurement on mean and std.csv", row.names = FALSE)
 write.csv(Average, file = "./Average.csv")
